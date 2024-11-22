@@ -1,0 +1,351 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+
+/***************** Navbar ******************/
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 50;
+    color: black;
+}
+
+nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+nav ul li {
+    transition: 0.7s;
+}
+
+nav ul li:hover a {
+    color: #ac8c74;
+}
+
+nav img {
+    width: 15rem;
+}
+
+.spacer {
+    height: 5rem;
+}
+
+/***************** HOME ******************/
+.home {
+    height: 100vh;
+    background-image: url(images/banner.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* ************* main *********** */
+main {
+    width: 100%;
+    height: auto;
+}
+
+/* ************* Overview *********** */
+.overview {
+    padding: 0 12rem;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: #1a1a1a;
+}
+
+.overview img {
+    width: 50%;
+    height: 100%;
+    flex: 1;
+    object-fit: cover;
+}
+
+.overview .overview-right {
+    color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.overview h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.overview-right p {
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+}
+
+
+
+/* ************* Price *********** */
+
+.price {
+    height: auto;
+    padding: 0 12rem;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.price h1 {
+    color: #ac8c74;
+}
+
+.price-card {
+    border-radius: 0.5rem;
+    border: 1px solid #ac8c74;
+    background-color: #111111;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.75rem;
+    width: 50%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.price-card:hover {
+    scale: 1.05;
+}
+
+.price-card h4 {
+    color: #ac8c74;
+    font-size: 1.5rem;
+}
+
+.price-card p {
+    font-size: 1.2rem;
+}
+
+.price-container {
+    width: 100%;
+    display: flex;
+    gap: 1.5rem;
+}
+
+
+/* * ************* Gallery *********** */
+
+.gallery {
+    padding: 0 12rem;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background: #111111;
+}
+
+.gallery h1 {
+    color: #ac8c74;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    grid-template-rows: repeat(3, 200px);
+}
+
+.gallery-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.4rem;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.gallery-container img:hover {
+    scale: 1.05;
+}
+
+
+/* * ************* Specifications *********** */
+
+.specifications {
+    height: auto;
+    padding: 0 12rem;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.specifications h1 {
+    color: #ac8c74;
+}
+
+.spec-item {
+    border: 1px solid #444;
+    border-radius: 0.35rem;
+    color: #ac8c74;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.specification-container {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+}
+
+.specification-container ul li {
+    margin-top: 5px;
+}
+
+.specification-container .specification-left,
+.specification-container .specification-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+/* * ************* About *********** */
+.about {
+    height: 100vh;
+    padding: 0rem 12rem;
+    display: flex;
+    align-items: center;
+    background-color: #1a1a1a;
+}
+
+.about-content {
+    width: 50%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.about-content h1 {
+    border-left: 2px solid #ac8c74;
+    padding-left: 1rem;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.about-content p {
+    line-height: 1.7rem;
+    font-size: 1.15rem;
+}
+
+.about img {
+    width: 50%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+/* * ************* Contact *********** */
+
+.contact {
+    background: black;
+    padding: 5rem 12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contact-item {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.contact-item:hover {
+    box-shadow: 0 0 20px #ac8c74;
+}
+
+.contact-item span {
+    color: #ac8c74;
+    border: 2px solid #ac8c74;
+    border-radius: 50%;
+    padding: 1rem;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-item p {
+    font-size: 1.5rem;
+}
+
+
+/* * ************* Footer *********** */
+footer {
+    background: #111111;
+    text-align: center;
+    padding: 2rem;
+}
